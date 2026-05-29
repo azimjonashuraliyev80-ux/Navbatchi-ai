@@ -1,0 +1,140 @@
+.doctors {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: #F9FAFB;
+}
+
+.doctors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.doctor-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #DC2626;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(220, 38, 38, 0.2);
+}
+
+.doctor-image {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-info {
+  padding: 2rem;
+}
+
+.doctor-info h2 {
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.specialty {
+  color: #DC2626;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description {
+  color: #6B7280;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.doctor-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.detail {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  color: #DC2626;
+  margin-top: 0.25rem;
+}
+
+.detail strong {
+  display: block;
+  color: #111827;
+  font-size: 0.85rem;
+}
+
+.detail p {
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+.doctor-education {
+  background: #F3F4F6;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.doctor-education strong {
+  color: #111827;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.doctor-education p {
+  color: #6B7280;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-image {
+    font-size: 3rem;
+    min-height: 150px;
+  }
+}
