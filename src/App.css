@@ -1,0 +1,30 @@
+:root {
+  --primary-red: #DC2626;
+  --secondary-red: #991B1B;
+  --light-white: #F9FAFB;
+  --dark-black: #111827;
+  --border-color: #E5E7EB;
+  --text-gray: #6B7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-white);
+  color: var(--dark-black);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
